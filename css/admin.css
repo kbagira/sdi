@@ -1,0 +1,172 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* TABLE */
+.request-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.request-table th {
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 16px 12px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.request-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e4e4e4;
+    color: #333;
+    font-weight: 500;
+}
+
+.request-table tr:hover {
+    background: #eef4ff;
+    transition: 0.15s ease;
+}
+
+.student-row:hover {
+    background: #f0f8ff;
+    cursor: pointer;
+}
+
+
+/* ============================
+       MODAL (fixed center)
+============================ */
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-bg.hidden {
+    display: none !important;
+}
+
+.modal-bg:not(.hidden) {
+    display: flex !important;
+}
+
+/* показ модалки */
+.modal-bg.show {
+    display: flex !important;
+}
+
+/* Бокс */
+.request-box {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.request-box h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+/* INFO LINES */
+.info-row {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.info-row span {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+/* pinned link */
+.pinned-link {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+.reject {
+    background: #d11a2a;
+}
+
+.remake {
+    background: #c58a00;
+}
+
+.accept {
+    background: #1c9d3e;
+}
+
+.reject:hover {
+    background: #b01221;
+}
+
+.remake:hover {
+    background: #a37000;
+}
+
+.accept:hover {
+    background: #157a31;
+}
+
+.profile__role-name,
+.profile__role {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2D2652;
+    margin: 4px 0;
+}

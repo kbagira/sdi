@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="profile__header">
+        <div class="profile__header-left">
+            <a href="board.html" class="profile__header-logo">
+                <img src="../img/logo_aiu.png" alt="logo" class="profile__header-img">
+            </a>
+            <a href="./profile.html" class="profile__header-name"></a>
+        </div>
+
+        <div class="profile__header-right">
+            <a class="profile__header-link" href="../pages/ratings.html">Rating</a>
+            <a class="profile__header-link" href="../pages/profile.html">Profile</a>
+            <a class="profile__header-link" href="../index.html">Log-out</a>
+
+            <div class="profile__header-lang">
+                <a href="#"><img src="../img/kg.png" alt="KG"></a>
+                <a href="#"><img src="../img/gb.png" alt="EN"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="achivement">
+            <div class="container">
+                <div class="achivement__content">
+
+                    <h1 class="achivement__title">New Achievement</h1>
+
+                    <form action="" class="achivement__form">
+
+                        <div class="achivement__group">
+                            <label for="fullname" class="achivement__label">Full name</label>
+                            <input type="text" id="fullname" class="achivement__input" required>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label for="faculty" class="achivement__label">Faculty</label>
+                            <input type="text" id="faculty" class="achivement__input" required>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label for="program" class="achivement__label">Program</label>
+                            <input type="text" id="program" class="achivement__input" required>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label for="studentId" class="achivement__label">Student ID</label>
+                            <input type="text" id="studentId" class="achivement__input" required>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label for="category" class="achivement__label">Category</label>
+                            <select name="category" id="category" class="achivement__select" required>
+                                <option value="" disabled selected>Select category</option>
+                                <option value="hackathon">Hackathon</option>
+                                <option value="awards">Awards</option>
+                                <option value="volunteering">Volunteering</option>
+                                <option value="exchange">Exchange & Dual Degree</option>
+                                <option value="event">Event</option>
+                                <option value="sports">Sports</option>
+                                <option value="conference">Conference</option>
+                                <option value="patent">Patent</option>
+                                <option value="project">Project</option>
+                                <option value="competition">Competition</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label for="subcategory" class="achivement__label">Subcategory</label>
+                            <select id="subcategory" class="achivement__select" required>
+                                <option value="" disabled selected>Select subcategory</option>
+                            </select>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label for="description" class="achivement__label">Description</label>
+                            <textarea id="description" maxlength="600" class="achivement__textarea"
+                                placeholder="Describe achievement..." required></textarea>
+                        </div>
+
+                        <div class="achivement__group">
+                            <label class="achivement__label">Proof (Link)</label>
+
+                            <input type="url" class="achivement__input" placeholder="Insert link (optional)">
+
+                        </div>
+
+                        <div class="achivement__actions">
+                            <button type="reset" class="achivement__btn achivement__btn-reset">Reset</button>
+                            <button type="submit" class="achivement__btn achivement__btn-submit">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="../js/achivement.js"></script>
+<script src="../js/profile.js"></script>
+
+
+</html>

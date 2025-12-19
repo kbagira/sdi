@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALA-TOO | Student Profile</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header class="profile__header">
+        <div class="profile__header-left">
+            <a href="board.html" class="profile__header-logo">
+                <img src="../img/logo_aiu.png" alt="logo" class="profile__header-img">
+            </a>
+            <a href="./profile.html" class="profile__header-name"></a>
+        </div>
+
+        <div class="profile__header-right">
+            <a class="profile__header-link" href="../pages/ratings.html">Rating</a>
+            <a class="profile__header-link" href="./achivements.html">achievement</a>
+            <a class="profile__header-link" href="../index.html">Log-out</a>
+            <div class="profile__header-lang">
+                <a href="#"><img src="../img/kg.png" alt="KG"></a>
+                <a href="#"><img src="../img/gb.png" alt="EN"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="container">
+                <div class="profile__content">
+                    <div class="profile__left">
+                        <div class="profile__avatar">
+                            <img class="profile__avatar-img" src="../img/stud_photo.jpeg" alt="Student Avatar">
+                        </div>
+                        <div class="profile__info">
+                            <h2 class="profile__name"></h2>
+                            <div class="profile__edu">
+                                <h3 class="profile__faculty">Faculty:</h3>
+                                <h3 class="profile__faculty-name"></h3>
+                            </div>
+                            <div class="profile__edu">
+                                <h3 class="profile__program">Program:</h3>
+                                <h3 class="profile__program-name"></h3>
+                            </div>
+                            <div class="profile__edu">
+                                <h3 class="profile__id">Student ID:</h3>
+                                <h3 class="profile__id-num"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__wallet">
+                        <h3 class="profile__wallet-title">Wallet</h3>
+                        <h3 class="profile__wallet-coins"></h3>
+                        <button class="profile__wallet-btn">Change</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="achievements">
+            <div class="container">
+                <div class="achievements__content">
+                    <div class="achievements__top">
+                        <h3 class="achievements__title">History of Achievements</h3>
+                        <button class="achievements__btn">+ Add Achievement</button>
+                    </div>
+                    <table class="achievements__table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Coins</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2025 ALA-TOO | Student Development Index</p>
+    </footer>
+
+</body>
+
+<script src="../js/profile.js"></script>
+<script>
+    document.querySelector(".achievements__btn").addEventListener("click", () => {
+        window.location.href = "./achivements.html";
+
+    });
+</script>
+
+</html>

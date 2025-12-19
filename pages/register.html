@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALA-TOO | Registration</title>
+    <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+    <header class="login__header">
+        <div class="login__header-lang">
+            <a href="#" class="login__header-flag"><img class="login__header-img" src="../img/kg.png" alt=""></a>
+            <a href="#" class="login__header-flag"><img class="login__header-img" src="../img/gb.png" alt=""></a>
+        </div>
+        <div class="login__header-line"></div>
+        <div class="login__header-main">
+            <img src="../img/logo_text.png" alt="ALA-TOO logo" class="login__header-logo" />
+        </div>
+        <div class="login__header-line"></div>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="container">
+                <div class="login__content">
+                    <h2 class="register__title">Create an Account</h2>
+                    <p class="login__text">Student Development Index</p>
+
+                     <form class="login__form" id="registerForm" onsubmit="return false;">
+                        <label for="studentNumber">Student number</label>
+                        <input id="studentNumber" type="text" required />
+
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" required />
+
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text" required />
+
+                        <label for="faculty">Faculty</label>
+                        <input id="faculty" type="text" required />
+
+                        <label for="groupName">Group</label>
+                        <input id="groupName" type="text" required />
+
+                        <label for="enrollmentYear">Enrollment Year</label>
+                        <input id="enrollmentYear" type="number" required />
+
+                        <label for="program">Program</label>
+                        <input id="program" type="text" required />
+
+                        <label for="password">Password</label>
+                        <input id="password" type="password" required />
+
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input id="confirmPassword" type="password" required />
+
+
+                        <div class="login__actions">
+                            <button type="submit" class="login__btn">Register</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="register__switch">
+                    <a href="../index.html" class="login__register-link">Already have an account?<br>Log in</a>
+                </div>
+
+                <div class="login__mail">
+                    <img class="login__mail-img" src="../img/gmail.jpg" alt="gmail">
+                    <a class="login__mail-link" href="#">Login to University Mail</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">ALA-TOO INTERNATIONAL UNIVERSITY © 2025</p>
+    </footer>
+</body>
+  <script src="../js/register.js" type="module"></script>
+
+</html>

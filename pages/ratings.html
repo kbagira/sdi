@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Ranking</title>
+    <link rel="stylesheet" href="../css/rating.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header class="profile__header">
+        <div class="profile__header-left">
+            <a href="board.html" class="profile__header-logo">
+                <img src="../img/logo_aiu.png" alt="logo" class="profile__header-img">
+            </a>
+            <a href="./profile.html" class="profile__header-name"></a>
+        </div>
+
+        <div class="profile__header-right">
+            <a class="profile__header-link" href="../pages/profile.html">Profile</a>
+            <a class="profile__header-link" href="../index.html">Log-out</a>
+
+            <div class="profile__header-lang">
+                <a href="#"><img src="../img/kg.png" alt="KG"></a>
+                <a href="#"><img src="../img/gb.png" alt="EN"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container">
+
+            <h1>Student Ranking</h1>
+
+            <div class="top-panel">
+                <input id="search-input" type="text" class="search" placeholder="Search by Name or ID">
+            </div>
+
+            <table class="ranking-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>
+                            <select id="filter-faculty" class="select-box">
+                                <option value="">Faculty</option>
+                                <option>Engineering</option>
+                                <option>Social Science</option>
+                                <option>Humanity</option>
+                                <option>Economics</option>
+                                <option>Medicine</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select id="filter-program" class="select-box">
+                                <option value="">Program</option>
+                                <option>Marketing</option>
+                                <option>Computer Science</option>
+                                <option>Humanity</option>
+                                <option>Accounting</option>
+                                <option>Medicine</option>
+                            </select>
+                        </th>
+
+                        <th>
+                            <select id="filter-group" class="select-box">
+                                <option value="">Group</option>
+                                <option>ComCEH</option>
+                                <option>ComSE</option>
+                                <option>EAIR</option>
+                                <option>MatMIE</option>
+                                <option>MatDies</option>
+                            </select>
+                        </th>
+
+                        <th>
+                            <select id="filter-year" class="select-box">
+                                <option value="">Year</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                            </select>
+                        </th>
+                        <th>Total Coins</th>
+                    </tr>
+                </thead>
+
+                <tbody id="students-table">
+
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+</body>
+<script src="../js/profile.js"></script>
+<script src="../js/student.js"></script>
+
+</html>

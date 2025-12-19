@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALA-TOO | Admin Profile</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+    </nav>
+    <header class="profile__header">
+        <div class="profile__header-left">
+            <a href="board.html" class="profile__header-logo">
+                <img src="../img/logo_aiu.png" alt="logo" class="profile__header-img">
+            </a>
+            <a href="./profile.html" class="profile__header-name"></a>
+        </div>
+
+        <div class="profile__header-right">
+            <a class="profile__header-link" href="../pages/ratings.html">Rating</a>
+            <a class="profile__header-link" href="../index.html">Log-out</a>
+
+            <div class="profile__header-lang">
+                <a href="#"><img src="../img/kg.png" alt="KG"></a>
+                <a href="#"><img src="../img/gb.png" alt="EN"></a>
+            </div>
+        </div>
+    </header>
+    <main class="admin_profile">
+
+
+    </main>
+    <section class="profile">
+        <div class="container">
+            <div class="profile__content">
+                <div class="profile__left">
+                    <div class="profile__avatar">
+                        <img class="profile__avatar-img" src="../img/stud_photo.jpeg" alt="Student Avatar">
+                    </div>
+                    <div class="profile__info">
+                        <h2 class="profile__name"></h2>
+                        <div class="profile__edu">
+                            <h3 class="profile__id">Admin IDs:</h3>
+                            <h3 class="profile__id-num">123456</h3>
+                        </div>
+                        <div class="profile__edu">
+                            <h3 class="profile__role">Role:</h3>
+                            <h3 class="profile__role-name"></h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="height: 10px;"></div>
+        <div class="container">
+
+            <h1 class="title">Student Requests</h1>
+
+            <table class="request-table">
+                <thead>
+                    <tr>
+                        <th>#order</th>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Group</th>
+                        <th>Activity</th>
+                        <th>Coins</th>
+                    </tr>
+                </thead>
+
+                <tbody id="requests-table"></tbody>
+            </table>
+
+            <div id="modal-bg" class="modal-bg hidden">
+    
+                <div id="request-box" class="request-box">
+                    <h2 class="student-name"></h2>
+
+                    <div class="info-row"><span>University ID:</span> <span class="id"></span></div>
+                    <div class="info-row"><span>Group:</span> <span class="group"></span></div>
+                    <div class="info-row"><span>Faculty:</span> <span class="faculty"></span></div>
+                    <div class="info-row"><span>Program:</span> <span class="program"></span></div>
+                    <div class="info-row"><span>Description:</span> <span class="description"></span></div>
+                    <div class="info-row"><span>Category:</span> <span class="category"></span></div>
+                    <div class="info-row"><span>Subcategory:</span> <span class="subcategory"></span></div>
+                    <div class="info-row"><span>Coins:</span> <span class="coins"></span></div>
+                    <div class="info-row"><span>Status:</span> <span class="status"></span></div>
+                    <div class="info-row">
+                        <span>Pinned Link:</span>
+                        <a href="#" class="pinned-link" target="_blank"></a>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="reject">Reject</button>
+                        <button class="remake">Remake</button>
+                        <button class="accept">Accept</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+</body>
+<script src="../js/admin.js"></script>
+
+</html>

@@ -1,0 +1,453 @@
+.profile {
+    &__header {
+        background-color: #2D2652;
+        padding: 12px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        color: #fff;
+
+        &-right {
+            display: flex;
+            gap: 30px;
+        }
+
+        &-logo img {
+            max-width: 55px;
+            transition: .2s;
+        }
+
+        &-logo img:hover {
+            transform: scale(1.05);
+        }
+
+        &-link {
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: .2s;
+
+            &:hover {
+                color: #f84747;
+            }
+        }
+
+        &-lang {
+            display: flex;
+            gap: 10px;
+
+            img {
+                width: 25px;
+                height: 18px;
+                cursor: pointer;
+                border-radius: 2px;
+                transition: .2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f1f1f1;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        margin: 30px;
+
+        &:hover {
+            transform: translateY(-2px);
+            transition: .2s;
+        }
+    }
+
+    &__left {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__avatar {
+        &-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2D2652;
+            transition: .2s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__name {
+        font-size: 26px;
+        margin: 0 0 8px;
+        color: #2D2652;
+        font-weight: bold;
+    }
+
+    &__edu {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__faculty,
+    &__program,
+    &__id {
+        font-size: 18px;
+        font-weight: bold;
+        color: #2D2652;
+        margin: 4px 0;
+
+        &-name,
+        &-num {
+            font-size: 18px;
+            color: #747171;
+            margin: 4px 0;
+        }
+    }
+
+    &__wallet {
+        text-align: center;
+        background: #fff;
+        border: 2px solid #2D2652;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        width: 40%;
+
+        &-title {
+            color: #2D2652;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        &-coins {
+            font-size: 38px;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 5px 0 5px;
+        }
+
+        &-btn {
+            padding: 6px 14px;
+            border-radius: 4px;
+            border: none;
+            background: #2D2652;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            transition: .2s;
+
+            &:hover {
+                transform: translateY(-2px);
+                background: #4a427e;
+            }
+        }
+    }
+
+}
+
+.profile__header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile__header-name,
+.profile__header-admin {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+.achievements {
+    &__content {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        background: #f1f1f1;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        gap: 20px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 28px;
+        color: #2D2652;
+        font-weight: bold;
+    }
+
+    &__btn {
+        background: #ffffff;
+        border: 2px solid #2D2652;
+        color: #2D2652;
+        font-weight: bold;
+        padding: 6px 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+            background: #dcdcdc;
+            transform: translateY(-2px);
+        }
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 6px;
+
+        th {
+            background: #2D2652;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            font-size: 16px;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        tr:hover td {
+            background: #f6f6f6;
+        }
+
+        .status {
+            font-weight: bold;
+
+            &.approved {
+                color: #27ae60;
+            }
+
+            &.pending {
+                color: #e7a100;
+            }
+
+            &.rejected {
+                color: #d63031;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    &__content {
+      flex-direction: column;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    &__left {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__wallet {
+      width: 50%;
+      margin-top: 20px;
+    }
+
+    &__avatar-img {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__name {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    &__faculty,
+    &__program,
+    &__id {
+      font-size: 26px;
+    }
+
+    &__faculty-name,
+    &__program-name,
+    &__id-num {
+      font-size: 26px;
+    }
+  }
+
+  .achievements {
+    &__content {
+      margin: 20px;
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__table {
+      th,
+      td {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    &__content {
+      margin: 15px;
+      padding: 15px;
+    }
+
+    &__left {
+      gap: 15px;
+    }
+
+    &__avatar-img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__name {
+      font-size: 26px;
+    }
+
+    &__wallet {
+      width: 60%;
+      padding: 15px;
+
+      &-title {
+        font-size: 28px;
+      }
+
+      &-coins {
+        font-size: 26px;
+      }
+    }
+
+    &__faculty,
+    &__program,
+    &__id {
+      font-size: 20px;
+    }
+
+    &__faculty-name,
+    &__program-name,
+    &__id-num {
+      font-size: 20px;
+    }
+  }
+
+  .achievements {
+    &__content {
+      padding: 15px;
+      gap: 15px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__table {
+      th,
+      td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    &__content {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    &__avatar-img {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__name {
+      font-size: 28px;
+    }
+
+    &__wallet {
+      width: 80%;
+      &-title {
+        font-size: 25px;
+      }
+      &-coins {
+        font-size: 30px;
+      }
+    }
+
+    &__faculty,
+    &__program,
+    &__id {
+      font-size: 18px;
+    }
+
+    &__faculty-name,
+    &__program-name,
+    &__id-num {
+      font-size: 18px;
+    }
+  }
+
+  .achievements {
+    &__content {
+      padding: 10px;
+      gap: 10px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__table {
+      th,
+      td {
+        font-size: 11px;
+        padding: 6px;
+      }
+    }
+  }
+}

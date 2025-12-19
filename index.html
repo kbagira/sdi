@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Student Development Index</title>
+</head>
+
+<body>
+  
+    <header class="login__header">
+        <div class="login__header-lang">
+            <a href="#" class="login__header-flag"><img class="login__header-img" src="./img/kg.png"
+                    alt="kyrgyz language"></a>
+            <a href="#" class="login__header-flag"><img class="login__header-img" src="./img/gb.png"
+                    alt="english language"></a>
+        </div>
+        <div class="login__header-line"></div>
+        <div class="login__header-main">
+            <img src="./img/logo_text.png" alt="ALA-TOO logo" class="login__header-logo" />
+        </div>
+        <div class="login__header-line"></div>
+    </header>
+
+    </header>
+    <main>
+        <section class="login">
+            <div class="container">
+                <div class="login__content">
+                    <a class="login__link" href="http://alatoo.edu.kg/">ALA-TOO INTERNATIONAL UNIVERSITY</a>
+                    <p class="login__text">Student Development Index</p>
+                    <form class="login__form" action="#" method="post" onsubmit="return false;">
+                        <label for="studentNumber">Student number</label>
+                        <input id="username" name="username" type="text" 
+                            autocomplete="username" />
+
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" />
+
+                        <div class="login__actions">
+                            <button type="submit" class="login__btn">Log in</button>
+                        </div>
+                    </form>
+                    <form>
+                        <label>
+                            <input type="radio" name="role" value="student" checked> Student
+                        </label>
+                        <label>
+                            <input type="radio" name="role" value="admin"> Admin
+                        </label>
+                    </form>
+
+                    <div class="login__help">
+                        <a href="#" class="login__help-link">Can't access my account</a>
+                    </div>
+                </div>
+                <div class="login__register">
+                    <a href="./pages/register.html" class="login__register-link">Don't have an account? Register</a>
+                </div>
+                <div class="login__mail">
+                    <img class="login__mail-img" src="./img/gmail.jpg" alt="gmail">
+                    <a class="login__mail-link" href="#">Login to University Mail</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__text">ALA-TOO INTERNATIONAL UNIVERSITY © 2019</p>
+    </footer>
+
+</body>
+<script src="./js/login.js"></script>
+
+
+</html>
